@@ -1,0 +1,10 @@
+let tempoGasto = parseFloat(prompt("Tempo gasto na viagem em horas:"));
+let velocidadeMedia = parseFloat(prompt("Velocidade média durante a viagem em km/h:"));
+let consumoMedio = parseFloat(prompt("O consumo médio do automóvel utilizado na viagem em quilômetros por hora"));
+let precoCombustivelPLitro = parseFloat(prompt("Preço do combustível utilizado durante a viagem em R$ por litro:"));
+let distanciaPercorrida = tempoGasto*velocidadeMedia;
+let consumo = consumoMedio*tempoGasto;
+let consumoFinall = consumo*precoCombustivelPLitro;
+alert("O valor total gasto foi "+ consumoFinall.toFixed(2) + "R$");
+alert("Distância percorrida: "+distanciaPercorrida.toFixed(2) + "km");
+alert("Combustível gasto: " +consumo.toFixed(2)+" litros");
